@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAPL - Crafting Legacies</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #1a1a1a;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        .container {
+            display: flex;
+            min-height: 100vh;
+            position: relative;
+            align-items: stretch;
+        }
+
+        /* Header */
+        .header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 80px;
+            background: #1a1a1a;
+            border-bottom: 4px solid;
+            border-image: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 40px;
+            z-index: 10;
+        }
+
+        .header-brand {
+            font-size: 3rem;
+            font-weight: 100;
+            letter-spacing: 6px;
+            color: #ffffff;
+        }
+
+        .header-tagline {
+            font-size: 1.5rem;
+            font-weight: 300;
+            letter-spacing: 4px;
+            color: #cccccc;
+            text-transform: uppercase;
+        }
+
+        /* Left Panel */
+        .left-panel {
+            width: 40%;
+            background: #2a2a2a;
+            padding: 120px 40px 60px 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+
+        .brand-section {
+            margin-bottom: 80px;
+        }
+
+        .logo-box {
+            background: #fff;
+            border: 5px solid #fff;
+            padding: 18px 28px;
+            margin: 40px auto 24px auto;
+            width: fit-content;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 12px;
+            box-shadow: 0 2px 16px 0 rgba(0,0,0,0.08);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            border: 2px solid #d4af37;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #d4af37;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .logo-text {
+            font-size: 1.8rem;
+            font-weight: 300;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        .announcement {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 16px 0 rgba(0,0,0,0.08);
+            margin: 0 auto 18px auto;
+            padding: 24px 18px 18px 18px;
+            width: fit-content;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .impact-logo-box {
+            background: transparent;
+            border: none;
+            padding: 0;
+            margin: 0 auto 10px auto;
+            box-shadow: none;
+            /*width: 280px;*/
+        }
+
+        .impact-logo-img {
+            display: block;
+            max-width: 160px;
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            margin: 0 auto 10px auto;
+            align-items: center;
+        }
+
+        .announcement h2 {
+            color: #232a35;
+            font-size: 2.1rem;
+            font-weight: 500;
+            margin: 0;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .mission-statement {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .mission-statement h3 {
+            font-size: 2rem;
+            font-weight: 400;
+            line-height: 1.4;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        /* Right Panel */
+        .right-panel {
+            width: 60%;
+            position: relative;
+            background: #1a1a1a;
+            margin-top: 80px;
+        }
+
+        .image-container {
+            width: 100%;
+            height: calc(100vh - 80px);
+            background: url('/images/mainBanner.webp') center/cover;
+            position: relative;
+        }
+
+        .image-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(0,0,0,0.7), rgba(0,0,0,0.3));
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .container {
+                flex-direction: column;
+            }
+            
+            .header {
+                position: relative;
+                flex-direction: column;
+                height: auto;
+                padding: 20px;
+                text-align: center;
+            }
+            
+            .header-brand {
+                font-size: 2rem;
+                margin-bottom: 10px;
+            }
+            
+            .header-tagline {
+                font-size: 1rem;
+            }
+            
+            .left-panel, .right-panel {
+                width: 100%;
+                margin-top: 0;
+            }
+            
+            .left-panel {
+                padding: 40px 20px;
+            }
+            
+            .right-panel {
+                height: 50vh;
+            }
+            
+            .image-container {
+                height: 50vh;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                padding: 15px;
+            }
+            
+            .header-brand {
+                font-size: 1.8rem;
+                letter-spacing: 3px;
+            }
+            
+            .header-tagline {
+                font-size: 0.9rem;
+                letter-spacing: 2px;
+            }
+            
+            .left-panel {
+                padding: 40px 20px;
+            }
+            
+            .announcement h2 {
+                font-size: 1.5rem;
+            }
+            
+            .mission-statement h3 {
+                font-size: 1.3rem;
+            }
+        }
+
+        /* Hover Effects */
+        .logo-box {
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .logo-box:hover {
+            
+            transform: translateY(-2px);
+        }
+
+        .logo-icon {
+            transition: all 0.3s ease;
+        }
+
+        .logo-box:hover .logo-icon {
+            background: #d4af37;
+            color: #2a2a2a;
+        }
+
+        /* Subtle Animations */
+        .header {
+            opacity: 0;
+            transform: translateY(-20px);
+            animation: fadeInDown 0.8s ease forwards;
+        }
+        
+        .left-panel > * {
+            opacity: 0;
+            transform: translateX(-30px);
+            animation: fadeInLeft 0.8s ease forwards;
+        }
+
+        .logo-box {
+            animation-delay: 0.2s;
+        }
+
+        .announcement {
+            animation-delay: 0.4s;
+        }
+
+        .mission-statement {
+            animation-delay: 0.6s;
+        }
+
+        @keyframes fadeInDown {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInLeft {
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .image-container {
+            opacity: 0;
+            animation: fadeIn 1s ease 0.5s forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        .footer {
+            background: #181818;
+            color: #fff;
+            padding: 40px 0 20px 0;
+            text-align: center;
+            border-top: 5px solid #fff;
+            margin-top: 0;
+            font-size: 1rem;
+        }
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 10px;
+        }
+        .footer-logo-icon {
+            width: 32px;
+            height: 32px;
+            border: 2px solid #d4af37;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #d4af37;
+            font-weight: bold;
+            font-size: 1rem;
+            background: #222;
+        }
+        .footer-logo-text {
+            font-size: 1.2rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #fff;
+        }
+        .footer-contact {
+            color: #ccc;
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+        .footer-contact a {
+            color: #d4af37;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .footer-contact a:hover {
+            color: #f4d03f;
+        }
+        @media (max-width: 768px) {
+            .footer-content {
+                font-size: 0.95rem;
+            }
+            .footer-logo-text {
+                font-size: 1rem;
+            }
+        }
+        .footer-papl-logo {
+            margin: 10px 0 0 0;
+            display: flex;
+            justify-content: center;
+        }
+        .papl-logo-img {
+            height: 40px;
+            width: auto;
+            filter: drop-shadow(0 2px 6px rgba(0,0,0,0.4));
+            object-fit: contain;
+        }
+        @media (max-width: 768px) {
+            .papl-logo-img {
+                height: 28px;
+            }
+        }
+        .leasegrid-logo-img {
+            height: 48px;
+            width: auto;
+            display: block;
+            margin-right: 10px;
+            filter: drop-shadow(0 2px 6px rgba(0,0,0,0.4));
+            object-fit: contain;
+        }
+        @media (max-width: 1024px) {
+            .leasegrid-logo-img {
+                height: 36px;
+                margin: 0 auto 10px auto;
+            }
+        }
+        @media (max-width: 768px) {
+            .leasegrid-logo-img {
+                    height: 28px;
+            }
+        }
+        .header-papl-logo {
+            height: 48px;
+            width: auto;
+            display: block;
+            margin-right: 10px;
+            filter: drop-shadow(0 2px 6px rgba(0,0,0,0.4));
+            object-fit: contain;
+        }
+        .logo-box .leasegrid-logo-img {
+            height: 70px;
+            margin-bottom: 10px;
+        }
+        @media (max-width: 1024px) {
+            .header-papl-logo {
+                height: 36px;
+                margin: 0 auto 10px auto;
+            }
+            .logo-box .leasegrid-logo-img {
+                height: 42px;
+            }
+        }
+        @media (max-width: 768px) {
+            .header-papl-logo {
+                height: 28px;
+            }
+            .logo-box .leasegrid-logo-img {
+                height: 42px;
+            }
+        }
+        .panel-divider {
+            width: 2.5px;
+            background: #fff;
+            height: auto;
+            min-height: 100vh;
+            align-self: stretch;
+            margin: 0;
+            box-shadow: 0 0 8px 0 rgba(255,255,255,0.08);
+        }
+        @media (max-width: 1024px) {
+            .panel-divider {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="images/PAPL Logo-White.png" alt="PAPL Logo" class="papl-logo-img header-papl-logo">
+        <div class="header-tagline">CRAFTING LEGACIES</div>
+    </div>
+    
+    <div class="container">
+        <div class="left-panel">
+            <div class="logo-box">
+                <div class="logo">
+                    <a href="https://panapadvisors.com/leasegrid"><img src="images/lease.png" alt="Lease Grid Logo" class="leasegrid-logo-img"></a>
+                </div>
+            </div>
+            
+            <div class="logo-box">
+                <div class="logo">
+                    <a href="https://panapadvisors.com/impactnest"><img src="images/impact-new.png" alt="Lease Grid Logo" class="leasegrid-logo-img"></a>
+                </div>
+            </div>
+            
+            <div class="mission-statement">
+                <h3>DRIVEN BY INSIGHT.<br>POWERED BY IMPACT.</h3>
+            </div>
+        </div>
+        <div class="panel-divider"></div>
+        <div class="right-panel">
+            <div class="image-container">
+                <div class="image-overlay"></div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            
+            <div class="footer-papl-logo">
+                <img src="images/PAPL Logo-White.png" alt="PAPL Logo" class="papl-logo-img">
+            </div>
+            <div class="footer-contact">
+                <div>Contact Us</div>
+                <div>CS-42, 4th floor, Ansal Plaza, Vaishali, Ghaziabad - 201010</div>
+                <div>Email: <a href="mailto:contact@panapadvisors.com">contact@panapadvisors.com</a></div>
+                <div>Phone: <a href="tel:+911234567890">+91-9971645151</a></div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

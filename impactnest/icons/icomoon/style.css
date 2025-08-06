@@ -1,0 +1,237 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoonca2c.eot?gd6swj');
+  src:  url('fonts/icomoonca2c.eot?gd6swj#iefix') format('embedded-opentype'),
+    url('fonts/icomoonca2c.ttf?gd6swj') format('truetype'),
+    url('fonts/icomoonca2c.woff?gd6swj') format('woff'),
+    url('fonts/icomoonca2c.svg?gd6swj#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+.icon-applePay:before {
+  content: "\e93f";
+}
+.icon-Eye:before {
+  content: "\e936";
+}
+.icon-connect-line-1:before {
+  content: "\e91f";
+}
+.icon-connect-line-2:before {
+  content: "\e920";
+}
+.icon-Wrench:before {
+  content: "\e921";
+}
+.icon-Warehouse:before {
+  content: "\e922";
+}
+.icon-LightbulbFilament:before {
+  content: "\e925";
+}
+.icon-FirstAidKit:before {
+  content: "\e926";
+}
+.icon-Basket:before {
+  content: "\e927";
+}
+.icon-Bank:before {
+  content: "\e928";
+}
+.icon-AirplaneTakeoff:before {
+  content: "\e929";
+}
+.icon-Briefcase:before {
+  content: "\e919";
+}
+.icon-strategic-planning:before {
+  content: "\e915";
+}
+.icon-operational-efficiency:before {
+  content: "\e916";
+}
+.icon-market-research:before {
+  content: "\e917";
+}
+.icon-change-management:before {
+  content: "\e918";
+}
+.icon-Crosshair1:before {
+  content: "\e933";
+}
+.icon-ChartPieSlice:before {
+  content: "\e934";
+}
+.icon-ChartLineUp:before {
+  content: "\e935";
+}
+.icon-Crosshair:before {
+  content: "\e92b";
+}
+.icon-ChartDonut:before {
+  content: "\e92c";
+}
+.icon-checkbox:before {
+  content: "\e914";
+  /* color: ; */
+}
+.icon-customized:before {
+  content: "\e92d";
+}
+.icon-advanced:before {
+  content: "\e92e";
+}
+.icon-streamlined:before {
+  content: "\e92f";
+}
+.icon-future:before {
+  content: "\e930";
+}
+.icon-risk:before {
+  content: "\e923";
+}
+.icon-reputation:before {
+  content: "\e924";
+}
+.icon-regulatory:before {
+  content: "\e92a";
+}
+.icon-tailored-business:before {
+  content: "\e91a";
+}
+.icon-expert-market:before {
+  content: "\e91b";
+}
+.icon-tax:before {
+  content: "\e910";
+}
+.icon-tailored:before {
+  content: "\e911";
+}
+.icon-investment:before {
+  content: "\e912";
+}
+.icon-financial:before {
+  content: "\e913";
+}
+.icon-CheckCircle:before {
+  content: "\e937";
+}
+.icon-TrendUp:before {
+  content: "\e932";
+}
+.icon-close1:before {
+  content: "\e900";
+}
+.icon-heart:before {
+  content: "\e906";
+}
+.icon-gitDiff:before {
+  content: "\e909";
+}
+.icon-Lightning:before {
+  content: "\e905";
+}
+.icon-chevron-down:before {
+  content: "\e901";
+}
+.icon-arrowRight:before {
+  content: "\e91c";
+}
+.icon-arrowLeft:before {
+  content: "\e91d";
+}
+.icon-arrow-top-right:before {
+  content: "\e94c";
+}
+.icon-telegram:before {
+  content: "\e941";
+}
+.icon-skype:before {
+  content: "\e942";
+}
+.icon-ig1:before {
+  content: "\e943";
+}
+.icon-x:before {
+  content: "\e944";
+}
+.icon-messenger:before {
+  content: "\e93e";
+}
+.icon-star:before {
+  content: "\e93d";
+}
+.icon-shipping:before {
+  content: "\e938";
+}
+.icon-timer:before {
+  content: "\e939";
+}
+.icon-share:before {
+  content: "\e93a";
+}
+.icon-question:before {
+  content: "\e93b";
+}
+.icon-arrowclockwise:before {
+  content: "\e93c";
+}
+.icon-arrowright2:before {
+  content: "\e91e";
+}
+.icon-arrowleft2:before {
+  content: "\e931";
+}
+.icon-user:before {
+  content: "\e90d";
+}
+.icon-calendarBlank:before {
+  content: "\e90e";
+}
+.icon-Play:before {
+  content: "\e902";
+}
+.icon-PhoneCall:before {
+  content: "\e903";
+}
+.icon-PaperPlaneTilt:before {
+  content: "\e904";
+}
+.icon-MapPin:before {
+  content: "\e907";
+}
+.icon-MagnifyingGlass:before {
+  content: "\e908";
+}
+.icon-Envelope:before {
+  content: "\e90a";
+}
+.icon-Arrow-Down:before {
+  content: "\e90f";
+}
+.icon-arrow-left:before {
+  content: "\e90b";
+}
+.icon-arrow-right1:before {
+  content: "\e90c";
+}
