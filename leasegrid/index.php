@@ -45,7 +45,7 @@
       <div class="banner-slide-item-one">
         <div class="banner-image-one">
           <img
-            src="assets/images/background/banner-one-image.jpg"
+            src="assets/images/background/banner-one-image.webp"
             alt="banner-image" />
         </div>
         <div class="container-fluid">
@@ -72,7 +72,7 @@
       <div class="banner-slide-item-one">
         <div class="banner-image-one">
           <img
-            src="assets/images/background/artboard2.png"
+            src="assets/images/background/artboard2.webp"
             alt="banner-image" />
         </div>
         <div class="container-fluid">
@@ -98,7 +98,7 @@
       <div class="banner-slide-item-one">
         <div class="banner-image-one">
           <img
-            src="assets/images/about/modernoffice.jpg"
+            src="assets/images/about/modernoffice.webp"
             alt="banner-image" />
         </div>
         <div class="container-fluid">

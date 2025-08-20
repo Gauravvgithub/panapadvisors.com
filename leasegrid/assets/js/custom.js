@@ -25,7 +25,7 @@
         //Preloader
         $(window).on('load', function() {
             if ($('.preloader').length) {
-                $('.preloader').delay(2500).fadeOut(100);
+                $('.preloader').delay(0).fadeOut(100);
             }
         });
     }

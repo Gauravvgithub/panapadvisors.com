@@ -93,7 +93,7 @@
         
 
     <!-- Asset Solutions Section -->
-    <section class="about-asset-section" style="padding: 40px 0; text-align: justify;">
+    <!-- <section class="about-asset-section" style="padding: 40px 0; text-align: justify;">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
@@ -104,7 +104,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- End of About Us content from paanap.com/about.html -->
 
    
@@ -127,7 +127,7 @@
                         <div class="about-details-one animate fadeInUp wow" data-wow-duration="1500ms" data-wow-delay="300ms">
                             <p class="lead" style="text-align: justify;">Leasegrid is a company decked with veteran professionals who provide unparalleled leasing solutions. We provide complete Asset Lifecycle Solutions, which are tailored to suit client's requirements. No matter what asset class you need to procure,we can assist you by customizing our solutions to help you optimize your cash flow. Whether you are looking for Plant and Machinery, servers ,furniture, electronics devices or any other kind of asset, Leasegrid can provide it to you on lease. Leasegrid is one of the provider of comprehensive leasing solutions for all your requirement.</p>
                         </div>
-                        <a href="our-specialised-solutions.php" class="btn btn-secondary btn-theme">Learn More <span>+</span></a>
+                        <!-- <a href="our-specialised-solutions.php" class="btn btn-secondary btn-theme">Learn More <span>+</span></a> -->
                     </div>
                 </div>
             </div>
@@ -270,7 +270,7 @@
                             <h2 class="heading-title">Leasing <span>Assets</span></h2>
                         </div>
                         <p class="lead">Leasegrid offers a full range of consultancy & training for data consultation and strategic business solutions.</p>
-                        <a href="about.php" class="btn btn-light btn-theme">View More <span>+</span></a>
+                        <!-- <a href="about.php" class="btn btn-light btn-theme">View More <span>+</span></a> -->
                     </div>
                 </div>
                 <div class="col-lg-8">
